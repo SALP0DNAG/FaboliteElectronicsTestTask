@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav-bar">
-        {% if not user.is_authenticated %}
+        {% if not request.user.is_authenticated %}
             <a href="{% url 'app:login' %}" class="login-register-profile">Войти</a>
             <a href="{% url 'app:register' %}" class="login-register-profile">Зарегестрироваться</a>
             <a href="{% url 'app:list_users' %}" class="list-users">Список пользователей</a>
