@@ -32,11 +32,15 @@ pip install -r requirements.txt
 }
 ```
 ## 4. Создайте миграции
+```
 python manage.py makemigrations
 python manage.py migrate
+```
 ## 5. Загрузите fixtures
 ```
 python manage.py loaddata app/fixtures/users.json
 ```
 ## 6. Запустите сервер
+```
 python manage.py runserver
+```
