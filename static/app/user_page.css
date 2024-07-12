@@ -1,0 +1,16 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info div {
+    margin: 5px;
+    width: 32%;
+    text-align: left;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}

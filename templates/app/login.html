@@ -1,0 +1,42 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Авторизация{% endblock title %}
+
+{% block styles %}
+    <link type="text/css" rel="stylesheet" href="{% static 'app/register.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="message">
+                {{message}}
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if form.errors %}
+        <div class="errors">
+        {% for field, errors in form.errors.items %}
+            {% for error in errors %}
+                <div>{{ error|striptags }}</div>
+            {% endfor %}
+        {% endfor %}
+        </div>
+    {% endif %}
+
+    <h1>Авторизация</h1>
+    <form action="{% url 'app:login' %}" method="post">
+        {% csrf_token %}
+        <div class="username">Имя пользователя</div>
+        {{ form.username }}
+        <div class="password">Пароль</div>
+        {{ form.password }}
+        <div class="button-submit">
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+{% endblock content %}

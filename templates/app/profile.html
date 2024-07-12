@@ -1,0 +1,49 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Профиль{% endblock title %}
+
+{% block styles %}
+    <link type="text/css" rel="stylesheet" href="{% static 'app/register.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'app/profile.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                {% if message.tags == 'error' %}
+                    <div class="error">
+                        {{ message}}
+                    </div>
+                {% else %}
+                    <div class="success">
+                        {{ message}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+    <h1>Профиль</h1>
+    <form action="{% url 'app:profile' %}" method="post">
+        {% csrf_token %}
+        <div class="username">Имя пользователя</div>
+        {{ form.username }}
+        <div class="password">Имя</div>
+        {{ form.first_name }}
+        <div class="password">Фамилия</div>
+        {{ form.last_name }}
+        <div class="password">Почта</div>
+        {{ form.email }}
+        <div class="password">Адрес</div>
+        {{ form.address }}
+        <div class="password">Обо мне</div>
+        {{ form.about_me }}
+        <div class="button-submit">
+            <input type="submit" value="Сохранить">
+        </div>
+        <div class="delete-account">
+            <a href="{% url 'app:delete_account' %}">Удалить аккаунт</a>
+        </div>
+    </form>
+{% endblock content %}

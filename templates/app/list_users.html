@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Список пользователей{% endblock title %}
+
+{% block styles %}
+    <link type="text/css" rel="stylesheet" href="{% static 'app/list_users.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    <h1>Список пользователей</h1>
+    <div class="users">
+        {% for user in users %}
+            {% if user == request.user %}
+                <a class="special-user" href="{% url 'app:profile' %}">{{ user.username }}</a>
+            {% else %}
+                <a href="{% url 'app:user_page' user.id %}" class="user">{{ user.username }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}

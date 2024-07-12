@@ -1,0 +1,19 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user {
+    color: black;
+    margin-top: 20px;
+}
+
+.user:hover, .special-user:hover {
+    text-decoration: underline;
+}
+
+.special-user {
+    margin-top: 20px;
+    color: red;
+}

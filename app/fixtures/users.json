@@ -1,0 +1,102 @@
+[
+  {
+    "model": "app.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$HrWgT1IxSKXhbzoZc3w52o$BqmItE9cT8p38KFE4OKUYQm78Qz+n4NJ5+yK719iPNw=",
+      "last_login": "2024-07-12T10:28:14.596Z",
+      "is_superuser": false,
+      "username": "happy_panda123",
+      "first_name": "Алексей",
+      "last_name": "Смирнов",
+      "email": "happy.panda123@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-12T10:28:00.442Z",
+      "address": "ул. Ленина, д. 12, кв. 34, г. Москва, Россия",
+      "about_me": "Люблю путешествовать, фотографировать и делиться своими впечатлениями в блоге.",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$FBGJ90QRXSx8iathxzkh9V$/St7XKtLV2MwMc/c/WPIKeOgUFUHQBAGZfhpAEALI80=",
+      "last_login": "2024-07-12T10:29:25.818Z",
+      "is_superuser": false,
+      "username": "booklover_jane",
+      "first_name": "Жанна",
+      "last_name": "Иванова",
+      "email": "jane.booklover@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-12T10:29:19.748Z",
+      "address": "пр. Невский, д. 78, кв. 21, г. Санкт-Петербург, Россия",
+      "about_me": "Профессиональный редактор и писатель, обожаю читать и обсуждать книги.",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$sAN48pruY3DU3t8GN7rpMX$trNh3p0T90nmEKnTyUxxVXPleZBgnzfAouJOXLTdRJc=",
+      "last_login": "2024-07-12T10:30:38.784Z",
+      "is_superuser": false,
+      "username": "tech_guru89",
+      "first_name": "Дмитрий",
+      "last_name": "Кузнецов",
+      "email": "guru.tech89@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-12T10:30:33.437Z",
+      "address": "ул. Гагарина, д. 45, кв. 56, г. Новосибирск, Россия",
+      "about_me": "Инженер-программист, интересуюсь новейшими технологиями и гаджетами.",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$hhnkepYFZSHFu7gGfNsfCe$P35aR4J9EkQzmPCePISurz44BBieTxfAg+CyW+rLiXw=",
+      "last_login": "2024-07-12T10:32:15.009Z",
+      "is_superuser": false,
+      "username": "fitness_fanatic",
+      "first_name": "Анна",
+      "last_name": "Крылова",
+      "email": "fitness.fanatic@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-12T10:32:08.733Z",
+      "address": "ул. Победы, д. 23, кв. 10, г. Екатеринбург, Россия",
+      "about_me": "Тренер по фитнесу и нутрициолог, люблю здоровый образ жизни и помогаю другим достичь их целей.",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$KmyJ7xVtktrqeCUsOwL2vV$N7q1uqAPWMqhZq2QZSCEoFF7PYQ++tvad+PVuJfQRIA=",
+      "last_login": "2024-07-12T10:33:19.851Z",
+      "is_superuser": false,
+      "username": "art_dreamer",
+      "first_name": "Михаил",
+      "last_name": "Петров",
+      "email": "art.dreamer@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-12T10:33:12.330Z",
+      "address": "ул. Садовая, д. 67, кв. 89, г. Казань, Россия",
+      "about_me": "Художник и дизайнер, вдохновляюсь природой и создаю уникальные арт-объекты.",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

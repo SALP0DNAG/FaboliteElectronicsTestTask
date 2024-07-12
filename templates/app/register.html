@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Регистрация{% endblock title %}
+
+{% block styles %}
+    <link type="text/css" rel="stylesheet" href="{% static 'app/register.css' %}">
+{% endblock styles %}
+
+{% block content %}
+    {% if form.errors %}
+        <div class="errors">
+        {% for field, errors in form.errors.items %}
+            {% for error in errors %}
+                <div>{{ error|striptags }}</div>
+            {% endfor %}
+        {% endfor %}
+        </div>
+    {% endif %}
+    <h1>Регистрация</h1>
+    <form action="{% url 'app:register' %}" method="post">
+        {% csrf_token %}
+        <div class="username">Имя пользователя</div>
+        {{ form.username }}
+        <div class="password">Пароль</div>
+        {{ form.password1 }}
+        <div class="password">Повторите пароль</div>
+        {{ form.password2 }}
+        <div class="button-submit">
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+    </form>
+{% endblock content %}

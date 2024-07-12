@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-bar {
+    padding-top: 20px;
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logout {
+    color: #FF0000;
+    border: 3px solid #FF0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logout:hover {
+    color: #B00000;
+    border: 3px solid #B00000;
+}
+
+.login-register-profile {
+    color: #25DB00;
+    border: 3px solid #25DB00;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login-register-profile:hover {
+    color: #1DB000;
+    border: 3px solid #1DB000;
+}
+
+.list-users {
+    color: #FFDE00;
+    border: 3px solid #FFDE00;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.list-users:hover {
+    color: #DEC000;
+    border: 3px solid #DEC000;
+}
+
+.container {
+    text-align: center;
+}
